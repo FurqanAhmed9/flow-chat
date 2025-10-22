@@ -46,7 +46,7 @@ export default async function HomePage() {
           <Button
             asChild
             variant="outline"
-            className="w-full sm:w-auto border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white text-lg font-semibold py-6 transition-all"
+            className="w-full sm:w-auto border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white text-lg font-semibold py-6 transition-all"
           >
             <Link href="/signup">Sign Up</Link>
           </Button>
