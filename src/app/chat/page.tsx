@@ -27,7 +27,7 @@ export default async function ChatPage() {
   return (
     <div className="h-screen overflow-hidden flex flex-col bg-background">
       {/* Header */}
-      <header className="flex justify-between items-center p-4 border-b flex-shrink-0">
+      <header className="flex justify-between items-center p-4 border-b shrink-0">
         <h1 className="text-3xl font-mono">flowchat...</h1>
         <div className="flex items-center gap-4">
           <span className="text-sm text-muted-foreground hidden sm:inline">

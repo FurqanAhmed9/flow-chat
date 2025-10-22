@@ -26,7 +26,7 @@ export function MessageBubble({ message }: { message: Message }) {
     >
       {/* Assistant Avatar */}
       {!isUser && (
-        <Avatar className="h-10 w-10 border flex-shrink-0 shadow-md">
+        <Avatar className="h-10 w-10 border shrink-0 shadow-md">
           <AvatarFallback className="bg-neutral-200 dark:bg-neutral-700">
             <Bot className="h-5 w-5 text-primary dark:text-white" />
           </AvatarFallback>
@@ -40,7 +40,7 @@ export function MessageBubble({ message }: { message: Message }) {
           "animate-in fade-in slide-in-from-bottom-2",
           isUser
             ? " bg-blue-500 text-white border-blue-400/40 shadow-blue-800/30"
-            : "bg-gradient-to-br from-gray-100 to-gray-200 text-gray-900 dark:from-gray-800 dark:to-gray-700 dark:text-gray-100 border-gray-500/30 shadow-gray-900/20"
+            : "bg-linear-to-br from-gray-100 to-gray-200 text-gray-900 dark:from-gray-800 dark:to-gray-700 dark:text-gray-100 border-gray-500/30 shadow-gray-900/20"
         )}
       >
         <p className="text-sm whitespace-pre-wrap leading-relaxed">
@@ -61,7 +61,7 @@ export function MessageBubble({ message }: { message: Message }) {
 
       {/* User Avatar */}
       {isUser && (
-        <Avatar className="h-10 w-10 border flex-shrink-0 shadow-md">
+        <Avatar className="h-10 w-10 border shrink-0 shadow-md">
           <AvatarFallback className="bg-blue-500 text-white">
             <User className="h-5 w-5" />
           </AvatarFallback>

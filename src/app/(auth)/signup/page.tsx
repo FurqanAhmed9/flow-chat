@@ -40,7 +40,7 @@ export default function SignupPage() {
   };
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-[#141e30] via-[#243b55] to-[#141e30] px-4">
+    <div className="flex min-h-screen items-center justify-center bg-linear-to-br from-[#141e30] via-[#243b55] to-[#141e30] px-4">
       <Card className="w-full max-w-2xl h-[650px] bg-black/70 backdrop-blur-xl text-white shadow-2xl rounded-3xl p-10 border border-gray-800 flex flex-col justify-center hover:shadow-blue-900/40 transition-all duration-300">
         <form onSubmit={handleSignUp} className="max-w-md mx-auto w-full">
           <CardHeader className="text-center mb-6">

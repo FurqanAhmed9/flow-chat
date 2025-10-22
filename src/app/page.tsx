@@ -23,7 +23,7 @@ export default async function HomePage() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-br from-[#141e30] via-[#243b55] to-[#141e30] text-white p-6 relative overflow-hidden">
+    <main className="flex min-h-screen flex-col items-center justify-center bg-linear-to-br from-[#141e30] via-[#243b55] to-[#141e30] text-white p-6 relative overflow-hidden">
       {/* Subtle glow effect */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(29,78,216,0.2),transparent_70%)] blur-3xl"></div>
 
