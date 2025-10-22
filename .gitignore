@@ -1,0 +1,26 @@
+# .gitignore
+
+# Dependencies
+/node_modules
+
+# Vercel
+/.vercel
+
+# Next.js
+/.next/
+/out/
+
+# Production
+/build
+
+# Environment variables
+.env*.local
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# System
+.DS_Store
+*.swp
