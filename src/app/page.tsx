@@ -29,7 +29,7 @@ export default async function HomePage() {
 
       <section className="z-10 text-center bg-black/60 backdrop-blur-xl border border-gray-700 rounded-3xl p-10 shadow-2xl max-w-lg w-full transform transition-transform hover:scale-[1.03] duration-300">
         <h1 className="text-5xl font-extrabold mb-4 tracking-wide drop-shadow-md">
-          flow<span className="text-blue-400">chat...</span>
+          flow<span className="text-blue-400">chat..</span>
         </h1>
         <p className="text-gray-300 mb-10 text-base leading-relaxed">
           Converse seamlessly with AI - built with Next.js & Supabase.
