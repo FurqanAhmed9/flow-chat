@@ -41,22 +41,23 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-linear-to-br from-[#141e30] via-[#243b55] to-[#141e30] px-4">
-      {/* Bigger form container but same inner UI */}
-      <Card className="w-full max-w-2xl h-[650px] bg-black/70 backdrop-blur-xl text-white shadow-2xl rounded-3xl p-10 border border-gray-800 flex flex-col justify-center hover:shadow-blue-900/40 transition-all duration-300">
-        <form onSubmit={handleLogin} className="max-w-md mx-auto w-full">
-          <CardHeader className="text-center mb-6">
-            <CardTitle className="text-4xl font-bold text-white drop-shadow-md">
+    <div className="flex min-h-screen items-center justify-center bg-linear-to-br from-[#141e30] via-[#243b55] to-[#141e30] px-4 sm:px-6 md:px-10">
+      <Card className="w-full max-w-lg sm:max-w-xl md:max-w-2xl bg-black/70 backdrop-blur-xl text-white shadow-2xl rounded-3xl p-6 sm:p-10 border border-gray-800 flex flex-col justify-center hover:shadow-blue-900/40 transition-all duration-300">
+        <form onSubmit={handleLogin} className="w-full max-w-md mx-auto">
+          <CardHeader className="text-center mb-4 sm:mb-6">
+            <CardTitle className="text-3xl sm:text-4xl font-bold text-white drop-shadow-md">
               Welcome Back
             </CardTitle>
-            <CardDescription className="text-gray-400 text-base mt-3">
+            <CardDescription className="text-gray-400 text-sm sm:text-base mt-2 sm:mt-3">
               Sign in to continue chatting with AI
             </CardDescription>
           </CardHeader>
 
-          <CardContent className="grid gap-6">
+          <CardContent className="grid gap-5 sm:gap-6">
             <div className="grid gap-2">
-              <Label htmlFor="email" className="text-gray-300">Email</Label>
+              <Label htmlFor="email" className="text-gray-300 text-sm sm:text-base">
+                Email
+              </Label>
               <Input
                 id="email"
                 type="email"
@@ -65,12 +66,14 @@ export default function LoginPage() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 disabled={isLoading}
-                className="bg-[#1f1f1f] text-white border-none focus:ring-2 focus:ring-blue-500 py-6 text-base placeholder:text-gray-400"
+                className="bg-[#1f1f1f] text-white border-none focus:ring-2 focus:ring-blue-500 py-5 sm:py-6 text-base placeholder:text-gray-400"
               />
             </div>
 
             <div className="grid gap-3 relative">
-              <Label htmlFor="password" className="text-gray-300">Password</Label>
+              <Label htmlFor="password" className="text-gray-300 text-sm sm:text-base">
+                Password
+              </Label>
               <Input
                 id="password"
                 type={showPassword ? "text" : "password"}
@@ -78,7 +81,7 @@ export default function LoginPage() {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 disabled={isLoading}
-                className="bg-[#1f1f1f] text-white border-none focus:ring-2 focus:ring-blue-500 pr-10 py-6 text-base placeholder:text-gray-400"
+                className="bg-[#1f1f1f] text-white border-none focus:ring-2 focus:ring-blue-500 pr-10 py-5 sm:py-6 text-base placeholder:text-gray-400"
               />
               <button
                 type="button"
@@ -90,9 +93,9 @@ export default function LoginPage() {
             </div>
           </CardContent>
 
-          <CardFooter className="flex flex-col gap-6 mt-8">
+          <CardFooter className="flex flex-col gap-5 sm:gap-6 mt-6 sm:mt-8">
             <Button
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold text-lg py-6 transition-all shadow-lg hover:shadow-blue-500/30"
+              className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold text-lg py-5 sm:py-6 transition-all shadow-lg hover:shadow-blue-500/30"
               type="submit"
               disabled={isLoading}
             >
