@@ -81,12 +81,12 @@ export default function SignupPage() {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 disabled={isLoading}
-                className="bg-[#1f1f1f] text-white border-none focus:ring-2 focus:ring-blue-500 pr-10 py-4 sm:py-5 text-base placeholder:text-gray-400"
+                className="bg-[#1f1f1f] text-white border-none focus:ring-2 focus:ring-blue-500 pr-10 py-5 sm:py-5 text-base placeholder:text-gray-400"
               />
               <button
                 type="button"
                 onClick={() => setShowPassword(!showPassword)}
-                className="absolute right-4 top-[55%] text-gray-400 hover:text-gray-200"
+                className="absolute right-4 top-[60%] text-gray-400 hover:text-gray-200"
               >
                 {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}
               </button>
