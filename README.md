@@ -26,8 +26,6 @@ Clone the repository and install all dependencies.
 git clone https://github.com/FurqanAhmed9/flow-chat.git && cd flow-chat
 ```
 
--   Create and add .env.local file in root folder with supabase and grok api keys
-
 ```bash
 npm install
 npm run dev
